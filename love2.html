@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>love</title>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/love.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.booklet.latest.js"></script>
+<script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js "></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/tagettpl_400.font.js"></script>
+<script type="text/javascript" src="js/tagett_400.font.js"></script>
+<script type="text/javascript">
+	/** 
+* 
+*----------Dragon be here!----------/ 
+*    ┏┓　   ┏┓ 
+*   ┏┛┻━━━┛┻┓ 
+*   ┃　　　    ┃ 
+*   ┃　　━　   ┃ 
+*   ┃　┳┛　┗┳   ┃ 
+*   ┃　　　　  ┃ 
+*   ┃　　　┻　 ┃ 
+*   ┃　　　　  ┃ 
+*   ┗━┓　　　┏━┛ 
+*     ┃　　　┃神兽保佑 
+*     ┃　　　┃代码无BUG！ 
+*     ┃　　　┗━━━┓ 
+*     ┃　　　　  ┣┓ 
+*     ┃　　　　　┏┛ 
+*     ┗┓┓┏━┳┓┏┛ 
+*      ┃┫┫　┃┫┫ 
+*      ┗┻┛　┗┻┛ 
+* ━━━━━━神兽出没━━━━━━by:hexiancheng
+*/  
+	Cufon.replace("#page1 h1,#page1 h2,#page46 h1,#page49 p",{fontFamily:"tagettpl",fontSize:"30px",color:"#F03"});
+	//Cufon.replace("#page49 p",{fontFamily:"tagettpl",fontSize:"30px",color:"#F03",lineheight:"300%"});
+	Cufon.replace("#page46 h1,#page48 h1",{fontFamily:"tagettpl",fontSize:"50px",color:"#fc8a04"});
+	Cufon.replace("#page3 h2,#page40 h2,#page42 h2,#page44 h2,#page50 p",{fontFamily:"tagett",color:"#F03"});
+	//Cufon.replace('h2',{fontFamily:"harrpy"});
+	//Cufon.set("fontSize","30px");
+	//Cufon.set("font-weight","bold");
+	//Cufon.set("color","#F03");
+</script>
+<link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+<link href="css/jquery.booklet.latest.css" type="text/css" rel="stylesheet" />	
+<link href="css/love.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body >
+<audio src="other/music2.mp3" autoplay="autoplay" loop="loop"></audio>
+<div id="all">
+	<div id="top">
+        <div>
+            <p>
+                <span data-text="卷">卷</span>
+                <span data-text="儿">儿</span>
+                <span data-text="生">生</span>
+                <span data-text="日">日</span>
+                <span data-text="快">快</span>
+                <span data-text="乐">乐</span>
+                <span data-text="！！！">！！！</span>
+            </p>	
+        </div>	
+    </div>
+    <!--<span class="first">Happy Birthday To Juaner~</span>
+    <span class="second">生日快乐~娟儿~~</span>
+    <span class="third">Happy Birthday To Juaner~</span>
+    <span class="forth">生日快乐~娟儿~~</span>-->
+    <div id="showimg"><img /></div>
+	<div id="con"></div>
+    <div id=main_v>
+        	<div id="v_top1"></div>
+            <div id="v_top2"></div>
+            <div id="v_mid1"></div>
+            <div id="v_mid2"></div>
+            <div id="v_mid3"></div>
+            <div id="v_mid4"></div>
+            <div id="v_foot1"></div>
+            <div id="v_foot2"></div> 
+            <div id="v_foot3"></div>             
+    </div>
+	<div id="main">
+    	<div></div>
+        <div></div>
+        <div></div>
+        <div style="border-radius:100px 20px 20px 20px"></div>
+        <div></div>
+        <div style="border-radius:20px 100px 20px 20px"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div style="border-radius:100px 20px 20px 20px"></div>
+        
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <div style="border-radius:20px 100px 100px 20px"></div>
+        <div style="border-radius:20px 20px 20px 100px"></div>
+        <div></div>
+        <div style="border-radius:20px 20px 100px 20px"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div style="border-radius:20px 20px 20px 100px"></div>
+        <div></div>
+        <div></div>    
+	</div>
+    <div id="book">
+    			<div id="custom-menu"></div>
+            <div id="mybook">
+                    <div title="美好明天"class="pageclass">
+                    	<h1>happy birthday to juan er!!!</h1>
+                    	<p>
+                        	<span>美</span>
+                            <span>好</span>
+                            <span>明</span>
+                            <span>天</span>
+                        </p>
+                        <h2>_bycheng er</h2>
+                    </div>
+                    <div title="page2" class="pageclass">
+                    	<img src="bigimg/page-2.jpg" />
+                        <h2>城儿 and 娟儿 De 故事<br />2014.09.29</h2>  
+                    </div>
+                    <div title="page3--第一次约会"> 	
+                        <h2>2014 . 10 . 1</h2> 
+                        <p>我们第一次约会啦，<br/>第一次的合照，<br/>第一次看电影，<br /><span>那时候的我们是不是还很青春、很单纯</span></p> 
+                    </div>
+                    <div title="page4">    
+                        <p>哈哈，娟儿是不是笑的特别开心嘞。因为娟儿确实很开心呀，现在看着，感觉城儿这张照片拍的好年轻，帅！</p>
+                    </div>
+                    <div title="page5-大二的娟儿"> 
+                        <p>这是大二时候的娟儿，齐刘海，还是一名红会人，那时候刚好身体不舒服，在宿舍休息拍下的照片。</p>
+                    </div>
+                    <div title="page6"> 
+                        <p>海珠湖公园，小娟在穿着漂亮的粉红色，比树枝上的花儿还要美呢，给她拍照。的就是帅气的城儿~~</p>
+                    </div>
+                    <div title="page7-医院相遇">    
+                        <p>这是显城第一天在医院陪小娟，偷拍的照片，那时候为什么要偷拍呢，因为你漂亮呀！</p>
+                    </div title="page8">
+                    <div>
+                    	<p>这个是娟儿用城儿的手机拍下的自拍照，那时候是不是特别瘦，哈哈，城儿老是说娟儿现在胖了，那时候有特别瘦么？娟儿觉得都差不多^-^</p>    
+                    </div>
+                    <div title="page9-十指紧扣"> 
+                    	<p>两个握在一起的手<br />小恩爱的背景图</p>   
+                    </div>
+                    <div title="page10">
+                    	<p>这个应该是娟儿去大学城找城儿，然后我们一起回赤岗前，拍下的照片。</p>    
+                    </div>
+                    <div title="page11-我们的女神">
+                    	<p>我们最爱的高圆圆来啦，是不是特别漂亮咧！！！</p>    
+                    </div>
+                    <div title="page12">   
+                    	<p>这是城儿穿着娟儿的大衣，还有我们两个的情侣睡衣拍的照片呢！看看娟儿~是不是特别幸福呢，满脸的幸福洋溢着！</p> 
+                    </div>
+                    <div title="page13-亲密照">
+                    	<p>可爱的娟儿和城儿一起嘟嘴卖萌，是不是都特别可爱咧~</p>   
+                    </div>
+                    <div title="page14">  
+                    	 <p>咦，这张照片好亲密呢~看娟儿多可爱，还很投入~害羞~~害羞~~~</p>
+                    </div>
+                    <div title="page15-嘟嘴巴的娟儿">  
+                    	<p>这是另一系列的嘟嘴卖萌照，那时候娟儿的脸是不是特别瘦，然后娟儿的表情是不是特别可爱呐~城儿都在身边静静地候着娟儿~</p>   
+                    </div>
+                    <div title="page16"> 
+                    	<p>噹~噹~噹，我们帅气男主来啦，看他犹豫的眼神，是不是特别帅气呢。对，这就是娟儿的城儿，帅气、真诚、勤奋、努力、上进。最重要的是对小娟特别好，这是娟儿最满意的。</p>    
+                    </div>
+                    <div title="page17-相约天河城"> 
+                    	<p>啦，啦，啦，我们漂亮又可爱的女主角出现啦，她是怎样的呢？这个该由我们的男主角城儿来评价。<br />显城心目中的小娟：善良、勇敢、可爱、漂亮、贤惠。这就是他喜欢小娟的原因~</p>  
+                    </div>
+                    <div title="page18">
+                    	<p>啦，啦，啦，我们第一次去天河城逛街约会啦，穿着非常帅气的城儿和可爱的娟儿，激动地在天河城自拍了~~</p>    
+                    </div>
+                    <div title="page19-情侣套餐">  
+                    	<p>娟儿的自拍来啦，看她笑得多灿烂呀，那天好激动呢，看到了好多好多的鱼。<br />显城：阿娟小心，你后面有鲨鱼！！！</p>  
+                    </div>
+                    <div title="page20"> 
+                    	<p>我们的情侣套餐~~~</p>   
+                    </div>
+                    <div title="page21-美好回忆"> 
+                    	<p>接着帅气的男主人和漂亮的女主人就来了个完美的合影，一样那么饿美好，那么幸福</p>   
+                    </div>
+                    <div title="page22"> 
+                    	<p>为什么放这张照片呢？得从这张照片的故事说起，那晚娟儿去地铁站给城儿送汤，心理其实特别想城儿，但也知道城儿必须回大学城了，所以娟儿就哭得稀里哗啦的，舍不得城儿走。</p>   
+                    </div>
+                    <div title="page23-西餐厅"> 
+                    	<p>这是我们在客村的西餐厅吃饭拍的照片，这是谁拍的照片呢？</p>   
+                    </div>
+                    <div title="page24"> 
+                    	<p>为什么你不笑一笑呢？小娟最喜欢看显城笑的样子啦，显城笑起来特别可爱，看到都开心。</p>   
+                    </div>
+                    <div title="page25-石室圣心大教堂">
+                    	<p>我们去圣心大教堂啦，你还是微微笑，要露出牙齿才好看呀！笨蛋，你该学学我~</p>    
+                    </div>
+                    <div title="page26">
+                    	<p>笨蛋，拍照你怎么望仰着头呢，看着都要摔倒了，你是在干嘛呢！看小娟儿我笑得多灿烂~~</p>    
+                    </div>
+                    <div title="page27--2015生日"> 
+                    	<p>这是娟儿生日的时候拍的照片，为什么我嘟着嘴呢？因为那天我生气呀，后来你把我哄高兴了，所以我们还是回了广药，这是在图书馆旁边的小路上拍的，你还记得吗？<br />显城：我当然记得~~~(*^__^*) 嘻嘻……</p>   
+                    </div>
+                    <div title="page28">
+                    	<p>后来我们在这里开心地聊了一会天，然后我们就一起去唱K庆祝我的生日去啦~</p>    
+                    </div>
+                    <div title="page29--美丽的海珠湖"> 
+                    	<p>这是在海珠湖，显城给娟儿拍的美美的照片，那天天气特别好，我们整整逛了大半天，走着聊着过得特别开心！</p>   
+                    </div>
+                    <div title="page30">
+                    	<p>我们在海珠湖美丽的合影，天空很蓝，天气特别好，娟儿也是穿的美美的出行的呢。身边站着显城，此刻的娟儿是最幸福的，因为有显城~</p>    
+                    </div>
+                    <div title="page31-情侣装来啦">
+                    	<p>海珠湖合照之三，显城撑着雨伞，给小娟撑起一片天，所以娟儿只需负责美美的就可以啦~~</p>    
+                    </div>
+                    <div title="page32">
+                    	<p>哇，我们的情侣T-SHIRT来啦！怎么办，我还是觉得黑色的比较好看，应该娟儿穿着黑色才对嘛~城儿穿艳丽的黄色，哈哈。O(∩_∩)O</p>    
+                    </div>
+                    <div title="page33-尊宝披萨">  
+                    	<p>这就是你在南京出差时候发给我的照片，看到你大汗淋漓，辛苦在外奔波的模样我就觉得很心疼。所以我也得赶紧出来工作，一起扛住我们的明天。而且，笨蛋你一定要吃好一点呀，不能省着随便吃~~</p>  
+                    </div>
+                    <div title="page34">
+                    	<p>嘻嘻，这是我们一起去吃披萨你偷拍的照片。为什么我嘟着嘴呢？其实我也不知道，但是都被你拍下来了，就是我们最宝贵的回忆！<br />显城：我觉得这张最可爱~(*^__^*) 嘻嘻……</p>    
+                    </div>
+                    <div title="page35--珠海之旅">
+                    	<p>这个呢，也是你给我拍的发呆的照片，我这样很可爱吗？为什么你那么爱拍娟儿呀？<br />显城：因为你可爱呀~这张也好看！！</p>    
+                    </div>
+                    <div title="page36"> 
+                    	<p>呼呼，我们的珠海游来啦，虽然下着小雨，但是也阻止不了我们的热情呀，我们还是一样游得特别开心呢~</p>   
+                    </div>
+                    <div title="page37-珠海渔女">
+                    	<p>呐呐呐，大长腿美女来啦。谢谢你那天拉着我去看音乐喷泉，坚持带我去珠海渔女，才有了我这张美美的大长腿照呀~</p>    
+                    </div>
+                    <div title="page38">    
+                    	<P>我们一起坐缆车登上珠海的山顶，我们笑得多甜呀，风景超好，最重要的是人美(*^__^*)</P>
+                    </div>
+                    <div title="page39--最可爱的卷儿"> 
+                    	<h2> 娟儿 & 城儿<br />之<br />珠海游</h2>
+                    	<p>阳光明媚，我们的珠海游系列终篇，期待下次的旅游会更精彩</p>          
+                    </div>
+                    <div title="page40">
+                    	<h2>2015.09.29</h2>
+                    	<p>一周年来啦，带着你送给我的项链美美的自拍来啦。是不是好可爱呢。哈哈，原谅我的自恋。</p>
+                    </div>
+                    <div title="page41--项链秀">
+                    	<h1>项链秀之二</h1>
+                    </div>
+                    <div title="page42">
+                    	<h2>2015.10.01</h2>
+                    	<h1>项链秀之<br />大学城</h1>
+                    </div>
+                    <div title="page43--我们的澳门">
+                    	<p>城哥办公室系列<br />霸气、帅气、魄力<br />感性十足</p>
+                    </div>
+                    <div title="page44">
+                    	<h2>Macau<br />2015.09.13</h2>
+                    	<p>喔，喔，喔。我们出发去澳门啦，那天心情真的好开心。期待了几次的澳门之旅终于来了。开心的心情是掩饰不住的嘞，所以我到现想起那天的旅游还是开心激动的喔！<p>
+                    </div>
+                    <div title="page45--澳门之旅">
+                    	<p>猪肉干<br />澳门威尼斯人<br />大三巴牌<br />葡挞<br />杏仁饼<br />葡京赌场</p>	
+                    </div>
+                    <div title="page46">
+                    	<div>
+                            <h1>love</h1>
+                            <h1>trip</h1>
+                            <h1>happy</h1>
+                        </div>
+                    </div>
+                    <div title="page47-单人照">
+                    	<p>澳门游之<br />城哥单人照</p>
+                    </div>
+                    <div title="page48">
+                    	<h1>together</h1>
+                        <p>城嫂单人照</p>
+                    </div>
+                    <div title="page49-故事未完，待续">
+                    	<h1>城儿 & 娟儿</h1>
+                        <p>Be<br /><br />together<br /><br />forever</p>
+                    </div>
+                    <div title="page50">
+                    	<h1>故&nbsp;&nbsp;事&nbsp;&nbsp;未&nbsp;&nbsp;完<br />待&nbsp;&nbsp;续</h1>
+                        <h2>--小&nbsp;娟</h2>
+                        <p>2015.11.26</p>
+                    </div>
+                   
+                    
+                </div>
+      </div>
+      
+</div>
+
+		<script src="js/animate.js"></script>		
+</body>
+
+</html>

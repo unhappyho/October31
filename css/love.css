@@ -1,0 +1,275 @@
+/* CSS Document */
+*{margin:0;padding:0;list-style:none;}
+body{background:url(../img/bgm.jpg);height:auto;}
+
+#main img{width:100%;height:100%;}
+#showimg{width:466px;height:590px;border:3px solid #F9C;border-radius:20px;position:fixed;left:50%;top:10px;margin-left:-233px;z-index:999;display:none;overflow:hidden;}
+#showimg img:hover{cursor:pointer;}
+#con {position:absolute;margin-top:90px;width:1345px;height:520px;z-index:-20;}
+	.ball{position:absolute;border-radius:100%;z-index:50;}
+
+	.first{width:200px;position:absolute;left:0px;top:100px;font-size:24px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;text-shadow:2px 2px #000;text-align:center;}
+	.third{width:200px;height:25px;position:absolute;left:1050px;top:575px;font-size:24px;font-family:"Trebuchet MS", Arial, 		Helvetica, sans-serif;text-shadow:2px 2px #000;text-align:center;}
+	.second{width:200px;height:25px;position:absolute;left:0px;top:575px;font-size:24px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;text-shadow:2px 2px #000;}
+	.forth{width:200px;height:25px;position:absolute;left:1150px;top:100px;font-size:24px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;text-shadow:2px 2px #000;}
+
+#all{width:1345px;height:auto;margin-left:auto;margin-right:auto;}
+
+/*现在开始顶部的艺术字体制作！！！--by显城~*/
+/*首先设置渐变背景*/
+#top{width:100%;height:80px;position:fixed;left:0px;top:0px;z-index:997;opacity:0.6;
+background:-webkit-linear-gradient(top,#C3C,#FCC); /*-webkit-gradient(linear, left top, left bottom,  color-stop(0,#fff),color-stop(0.5,#ff0000),color-stop(1,#000));*/ /* Saf4+, Chrome */
+background:-moz-linear-gradient(top,#C3C,#FCC); /* Firefox */
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#C3C', endColorstr='#FCC', GradientType='0'); /* IE*/
+background:-ms-linear-gradient(top,#C3C,#FCC);
+}
+
+#top div{width:1200px;height:70px;margin-top:10px;margin-left:auto;margin-right:auto;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-align-items:center;
+	align-items:center;
+	-webkit-justify-content:space-around;
+	justify-content:space-around;
+	}
+#top div p{
+	color:#fff;line-height:70px;font-size:70px;font-weight:bold;font-family:mysecondFont;
+	}
+#top div p span{
+	width:140px;
+	display:inline-block;position:relative;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	-webkit-perspective:400;
+    perspective:400;
+	}
+/*设置共有属性*/
+#top div p span::before,
+#top div p span::after{
+	/*添加主文本*/
+	content:attr(data-text);
+	/*设置位置*/
+	position:absolute;
+	top:0px;left:-1px;
+	/*原点设置*/
+	-webkit-transform-origin:left top;
+	-ms-transform-origin:left top;
+    transform-origin:left top;
+	/*延时设置*/
+	-webkit-transition:transform ease-out 1s;
+    transition:transform ease-out 1s;
+	}
+/*设置私有属性*/
+#top div p span::before{
+	z-index:1;
+	color:rgba(0,0,0,0.2);
+	-webkit-transform:scale(1.1, 1) skew(0deg,15deg);
+	-ms-transform:scale(1.1, 1) skew(0deg,15deg);
+	-moz-transform:scale(1.1, 1) skew(0deg,15deg);
+    transform:scale(1.1, 1) skew(0deg,15deg);
+	}	
+#top div p span::after{
+	z-index:2;
+	color:#F03;
+	-webkit-transform:rotateY(-40deg);
+	-ms-transform:rotateY(-40deg);
+	-moz-transform:rotateY(-40deg);
+    transform:rotateY(-40deg);
+	text-shadow:-2px 0 2px #F03,2px 0 2px rgba(0,0,0,0.8);
+	}
+/*设置hover属性*/
+#top div p span:hover::before {
+	-webkit-transform:scale(1.1, 1) skew(0deg, 5deg);
+	-ms-transform:scale(1.1, 1) skew(0deg, 5deg);
+	-moz-transform:scale(1.1, 1) skew(0deg, 5deg);
+    transform:scale(1.1, 1) skew(0deg, 5deg);
+	}
+#top div p span:hover::after {
+	-webkit-transform:rotateY(-10deg);
+	-ms-transform:rotateY(-10deg);
+	-moz-transform:rotateY(-10deg);
+    transform:rotateY(-10deg);
+	}
+
+
+#main{width:100%;height:520px;margin-top:90px;float:left;}
+	#main_v{width:320px;height:508px;position:absolute;left:672px;top:92px;}
+		#v_top1{border-radius:20px;}
+		#v_top2{border-radius:20px;margin-left:120px;}
+		#v_mid1{border-radius:20px;}
+		#v_mid2{border-radius:20px;margin-left:120px;}
+		#v_mid3{border-radius:20px;margin-left:25px;}
+		#v_mid4{border-radius:20px;margin-left:70px;}
+		#v_foot1{border-radius:20px 20px 20px 50px;margin-left:50px;}
+		#v_foot2{border-radius:20px 20px 50px 20px;margin-left:20px;}
+		#v_foot3{border-radius:20px 20px 100px 100px;margin-left:110px;}
+		
+		.vvv{width:100px;height:100px;float:left;margin-top:2px;}
+	
+.cannotsee{width:100px;height:100px;margin-left:10px;margin-top:2px;float:left;}
+.aaa{background:yellow;border-radius:20px;overflow:hidden;
+
+transition:transform 2s;
+-webkit-transition:-webkit-transform 2s; /* Safari and Chrome */
+-ms-transition:-ms-transform 2s;
+opacity:0.65;filter:alpha(opacity=55);
+}
+
+.aaa:hover
+{
+transform:rotateY(360deg);		
+-webkit-transform:rotateY(360deg); /* Safari and Chrome */
+-ms-transform:rotateY(360deg);
+background-color:#0F3;
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+box-shadow:2px 2px #666;
+cursor:pointer;
+}
+
+span,#mybook .pageclass p{color:#FF9;}
+@font-face
+{
+	font-family:myFirstFont;
+	src:url("../other/weatherd.ttf")
+}
+
+@font-face
+{
+	font-family:mysecondFont;
+	src:url("../other/hanyiwawa.ttf")
+}
+/*书本的制作···················································*/
+#book{
+	width:100%;height:540px;float:left;position:relative;padding-top:101px;
+	background:url(../img2/bg.png) no-repeat 110px 74px;
+	background-size:85% 100%;
+}
+#custom-menu{
+	position:absolute;
+	left:1125px;
+	top:55px;	
+}
+
+/*页码制作*/
+.booklet .b-counter {
+	bottom:10px;
+	position:absolute;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#222;
+	text-align:center;
+	font-size:12px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #fff;
+	-webkit-box-shadow:0px -1px 1px #fff;
+	box-shadow:0px -1px 2px #fff;
+	opacity:0.8;
+}
+/*相册内容制作--------------------------------------------------*/
+.pageclass{width:100%;height:90%;position:relative;border-top:5px dashed #C60;border-bottom:5px dashed #C60;
+	background:url(../img/book-bg.png);
+	background-size:70% 80%;
+	}
+.pageclass img{width:250px;height:370px;border:solid 1px #CCC;padding:5px;border-radius:20px;-moz-box-shadow:2px 2px 10px #000;-webkit-box-shadow:2px 2px 10px #000;position:absolute;top:50px;}
+.pageclass p{position:absolute;left:55%;top:10%;line-height:300%;font-family:mysecondFont;text-align:center;}
+/*第1页-------------------------------------------------------*/
+	#page1 h1{text-align:center;margin-top:70px;}
+	#page1 p {font-size:70px;line-height:70px;position:absolute;top:40%;left:25px;font-family:mysecondFont;font-weight:bold;}
+	#page1 p span {display:inline-block;width:80px;}
+	#page1 h2{margin-top:55%;text-align:right;}
+	
+/*第2页-------------------------------------------------------*/
+	#page2 img{width:370px;height:280px;margin-top:20px;margin-left:50px;top:0px;}
+	#page2 h2{text-align:center;font-family:mysecondFont;color:#0CC;margin-top:360px;}
+	
+/*第3~4页-------------------------------------------------------*/
+	#page3 h2{position:absolute;left:60%;top:10%;}
+	#page3 p{font-size:23px;top:20%;}
+	#page4 p{font-size:21px;}
+/*第5~6页-------------------------------------------------------*/
+	#page5 p{font-size:23px;}
+	#page6 p{font-size:23px;}	
+/*第7~8页-------------------------------------------------------*/
+	#page7 p{font-size:23px;}
+	#page8 p{font-size:20px;}
+/*第9~10页-------------------------------------------------------*/
+	#page9 p{font-size:25px;top:35%;}	
+	#page10 p{font-size:25px;}
+/*第11~12页-------------------------------------------------------*/
+	#page11 p{font-size:25px;top:30%;}
+	#page12 p{font-size:20px;}
+/*第13~14页-------------------------------------------------------*/
+	#page13 p{font-size:23px;top:30%;}
+	#page14 img{width:370px;height:280px;margin-top:20px;margin-left:50px;top:0px;}
+	#page14 p{font-size:23px;top:70%;left:10%;}
+/*第15~16页-------------------------------------------------------*/
+	#page15 p{font-size:20px;}
+	#page16 p{font-size:18px;}
+/*第17~18页-------------------------------------------------------*/
+	#page17 p{font-size:17px;}
+	#page18 p{font-size:23px;}
+/*第19~20页-------------------------------------------------------*/
+	#page19 p{font-size:24px;}
+	#page20 img{width:370px;height:280px;margin-top:20px;margin-left:50px;top:0px;}
+	#page20 p{font-size:30px;top:70%;left:30%}
+/*第21~22页-------------------------------------------------------*/
+	#page21 p{font-size:23px;top:20%;}
+	#page22 p{font-size:18px;}
+/*第23~24页-------------------------------------------------------*/
+	#page23 p{font-size:23px;top:30%;}
+	#page24 p{font-size:23px;}
+/*第25~26页-------------------------------------------------------*/
+	#page25 p{font-size:25px;}
+	#page26 p{font-size:25px;}
+/*第27~28页-------------------------------------------------------*/
+	#page27 p{font-size:15px;}
+	#page28 p{font-size:27px;}
+/*第29~30页-------------------------------------------------------*/
+	#page29 p{font-size:23px;}
+	#page30 p{font-size:20px;}	
+/*第31~32页-------------------------------------------------------*/
+	#page31 p{font-size:23px;}
+	#page32 p{font-size:20px;}
+/*第33~34页-------------------------------------------------------*/
+	#page33 p{font-size:18px;}
+	#page34 p{font-size:18px;}
+/*第35~36页-------------------------------------------------------*/
+	#page35 p{font-size:20px;}
+	#page36 p{font-size:23px;}
+/*第37~38页-------------------------------------------------------*/
+	#page37 p{font-size:23px;}
+	#page38 p{font-size:23px;}
+/*第39~40页-------------------------------------------------------*/
+	#page39 p{font-size:23px;top:30%}
+	#page39 h2{position:absolute;left:60%;top:10%;text-align:center;font-family:mysecondFont;color:#F03;}
+	#page40 h2{position:absolute;left:60%;top:10%;}
+	#page40 p{font-size:23px;top:20%}
+/*第41~42页-------------------------------------------------------*/
+	#page41 img{width:370px;height:280px;margin-top:20px;margin-left:50px;top:0px;}
+	#page41 h1{position:absolute;top:85%;left:30%;color:#0F0;text-decoration:underline;font-family:mysecondFont;}
+	#page42 h2{position:absolute;left:60%;top:10%;}
+	#page42 h1{position:absolute;color:#F03;left:60%;top:35%;text-align:center;font-family:mysecondFont;line-height:200%}	
+/*第43~44页-------------------------------------------------------*/
+	#page43 p{font-size:27px;top:30%;}
+	#page44 h2{position:absolute;left:60%;top:10%;text-align:center;}
+	#page44 p{font-size:16px;top:30%;}
+/*第45~46页-------------------------------------------------------*/
+	#page45 p{left:60%;font-size:25px;top:7%;}
+	#page46 div{position:absolute;left:70%;top:10%;width:200px;height:auto;}
+	#page46 div h1{margin-top:50px;}
+/*第47~48页-------------------------------------------------------*/
+	#page47 p{font-size:30px;top:30%;left:64%;}
+	#page48 p{font-size:30px;top:50%;left:64%;}
+	#page48 h1{position:absolute;left:64%;top:20%;}	
+/*第49~50页-------------------------------------------------------*/
+	#page49 h1{position:absolute;left:60%;top:20%;font-family:mysecondFont;text-decoration:underline;color:#F03;}
+	#page49 p{top:35%;left:70%;}
+	#page49 img{width:270px;}
+	#page50 h1{position:absolute;top:20%;font-family:mysecondFont;left:10%;font-size:70px;color:#F03;text-shadow:5px 5px 5px #000;text-align:center;}
+	#page50 h2{position:absolute;top:70%;left:70%;font-family:mysecondFont;text-decoration:underline;color:#F03;}
+	#page50 p{left:75%;top:80%;}
